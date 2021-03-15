@@ -31,8 +31,8 @@ def pre():
         txt = pd.Series(txt)
         result = Model.predict(txt)
         return render_template("index.html", result = result)
-    return '' 
-    
+    return ''
+
 
 if __name__ == "__main__":
     app.run(debug=True)
